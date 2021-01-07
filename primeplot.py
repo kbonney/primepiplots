@@ -20,11 +20,13 @@ def pi(n):
         return out
 
 # Data for plotting
-t = np.arange(0.0, 100, 0.1)
+t = np.arange(5, 100000, 0.1)
 s = pi(t) / np.floor(t).astype(int)
+v = 1 / np.log(t)
 
 fig, ax = plt.subplots()
 ax.plot(t, s)
+ax.plot(t,v)
 
 ax.set(xlabel='x', ylabel='pi(x)/x',
        title='About as simple as it gets, folks')
