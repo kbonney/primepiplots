@@ -23,7 +23,7 @@ def digappx(n):
     if isinstance(n,(list,np.ndarray)):
         out = []
         for cur_num in n:
-            out.append(cur_num / (2*len(str(cur_num))))
+            out.append(cur_num / (2.3*len(str(cur_num))))
         return out
     else:
         out=n / len(str(n))
